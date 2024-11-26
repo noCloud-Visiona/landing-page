@@ -1,14 +1,38 @@
-import Navbar from '../components/Navbar.tsx';
+/* Importação de Componentes */
+import Navbar from "./components/Navbar";
+import MainContent from "./components/MainContent";
+import LogoContainer from "./components/LogoContainer";
+import AboutSection from "./components/AboutSection";
+import TechnologiesSection from "./components/TechnologiesSection";
+
+/* Importação de Módulos */
+import Image from "next/image";
+import { Inter } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+});
 
 export default function Home() {
   return (
-    <div>
+    <div className={`${inter.className} min-h-screen bg-gray-50 relative`}>
+      {/* Imagem no Topo */}
+      <Image
+        src="/assets/main_bg.png"
+        alt="Background"
+        width={969}
+        height={1024}
+        className="absolute top-0 right-0 w-[969px] h-[1024px] -z-10 object-cover"
+        priority
+      />
+
+      {/* Conteúdo */}
       <Navbar />
-      <main className="p-6">
-        <h1 className="text-2xl font-bold text-center">
-          Bem-vindo ao nosso site!
-        </h1>
-      </main>
+      <MainContent />
+      <LogoContainer />
+      <AboutSection />
+      <TechnologiesSection />
     </div>
   );
 }
