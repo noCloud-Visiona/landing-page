@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutSection = () => {
   return (
-    <div className="px-20 py-16">
+    <div className="px-20 py-16" id="sobre">
       {/* Título Principal */}
       <div className="text-center mb-8">
         <h2 className="text-4xl font-bold leading-[60px] text-[#111827]">

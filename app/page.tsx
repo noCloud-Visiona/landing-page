@@ -8,6 +8,8 @@ import TechnologiesSection from "./components/TechnologiesSection";
 /* Importação de Módulos */
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import GitHubSection from "./components/GithubSection";
+import BottomBar from "./components/BottomBar";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -27,12 +29,18 @@ export default function Home() {
         priority
       />
 
-      {/* Conteúdo */}
+      {/* Nav */}
       <Navbar />
+
+      {/* Main Content */}
       <MainContent />
       <LogoContainer />
       <AboutSection />
       <TechnologiesSection />
+      <GitHubSection />
+
+      {/* Bottom Bar */}
+      <BottomBar />
     </div>
   );
 }

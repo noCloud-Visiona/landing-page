@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const TechnologiesSection = () => {
   return (
-    <div className="flex items-center px-20 py-16 bg-[#073256]">
+    <div className="flex items-center px-20 py-16 bg-[#073256]" id="tecnologias">
       {/* Lado Esquerdo - Título e Subtítulo */}
       <div className="w-1/2 text-white">
         <h2 className="text-4xl font-bold leading-[60px]">

@@ -7,19 +7,24 @@ const Navbar = () => {
     <nav className="flex justify-between items-center px-20 bg-transparent">
       {/* Seção Esquerda */}
       <div className="flex space-x-6">
-        <Link href="/">
+        <Link href="#inicio">
           <p className="text-[#505F98] hover:text-opacity-80 font-Inter text-m leading-6 cursor-pointer">
-            Home
+            Ínicio
           </p>
         </Link>
-        <Link href="/sobre">
+        <Link href="#inicio">
           <p className="text-[#505F98] hover:text-opacity-80 font-Inter text-m leading-6 cursor-pointer">
             Sobre
           </p>
         </Link>
-        <Link href="/contato">
+        <Link href="#tecnologias">
           <p className="text-[#505F98] hover:text-opacity-80 font-Inter text-m leading-6 cursor-pointer">
-            Contato
+            Tecnologias
+          </p>
+        </Link>
+        <Link href="#github">
+          <p className="text-[#505F98] hover:text-opacity-80 font-Inter text-m leading-6 cursor-pointer">
+            GitHub
           </p>
         </Link>
       </div>

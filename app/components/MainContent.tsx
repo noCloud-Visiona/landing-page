@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const MainContent = () => {
   return (
-    <div className="relative">
+    <div className="relative" id="inicio">
       <div className="flex justify-between items-center px-20 py-10">
         {/* Seção Esquerda */}
         <div className="w-3/5">
@@ -19,9 +19,9 @@ const MainContent = () => {
           </p>
           <div className="flex space-x-4 mt-6">
             <div>
-              <button className="bg-[#073256] text-white px-6 py-2 rounded-md font-semibold text-lg hover:opacity-90 transition">
+              <a href="#sobre" className="bg-[#073256] text-white px-6 py-2 rounded-md font-semibold text-lg hover:opacity-90 transition">
                 Como funciona?
-              </button>
+              </a>
             </div>
             <div>
               <button className="flex items-center bg-[#FFF] text-[#073256] px-6 py-2 rounded-md font-semibold text-lg hover:opacity-90 transition">
